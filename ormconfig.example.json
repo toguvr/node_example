@@ -1,0 +1,29 @@
+[
+  {
+    "name": "default",
+    "type": "mysql",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "",
+    "schema": "",
+    "synchronize": false,
+    "entities": ["./dist/modules/**/infra/typeorm/entities/*.js"],
+    "migrations": ["./dist/shared/infra/typeorm/migrations/*.js"],
+    "cli": {
+      "migrationsDir": "./dist/shared/infra/typeorm/migrations"
+    }
+  },
+  {
+    "name": "mongo",
+    "type": "mongodb",
+    "host": "localhost",
+    "port": 2017,
+    "username": "nahora",
+    "password": "0f7958c91f3fc2a8602caa18c191f700",
+    "database": "nahora",
+    "useUnifiedTopology": true,
+    "entities": ["./dist/modules/**/infra/typeorm/schemas/*.js"]
+  }
+]
